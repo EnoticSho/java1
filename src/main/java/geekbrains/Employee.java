@@ -1,12 +1,12 @@
 package geekbrains;
 
 public class Employee {
-    public String name;
-    public String position;
-    public String mail;
-    public int phone;
-    public int salary;
-    public int age;
+    private String name;
+    private String position;
+    private String mail;
+    private int phone;
+    private int salary;
+    private int age;
 
     public static void main(String[] args) {
         Employee[] employees = new Employee[5];
@@ -81,8 +81,8 @@ public class Employee {
     }
 
     public void printInfo() {
-        System.out.println("ФИО : " + this.name + ". Должность : " + this.position +
-                ". email : " + this.mail + ". Телефон : " + this.phone +
-                ". Зарплата : " + this.salary + ". Возраст :" + this.age);
+        System.out.println("ФИО : " + name + ". Должность : " + position +
+                ". email : " + mail + ". Телефон : " + phone +
+                ". Зарплата : " + salary + ". Возраст :" + age);
     }
 }
