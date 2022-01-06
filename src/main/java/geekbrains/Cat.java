@@ -1,11 +1,10 @@
 package geekbrains;
 
 public class Cat extends Animal {
-    private String name;
     public static int count = 0;
 
     public Cat(String name) {
-        this.name = name;
+        super(name);
         count++;
     }
 
@@ -21,13 +20,5 @@ public class Cat extends Animal {
     @Override
     public void swimming(int length) {
         System.out.println("Котик " + name + " не умеет плавать");
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
     }
 }

@@ -1,13 +1,13 @@
 package geekbrains;
 
 public class Dog extends Animal {
-    private String name;
     public static int count = 0;
 
     public Dog(String name) {
-        this.name = name;
+        super(name);
         count++;
     }
+
 
     @Override
     public void running(int length) {
@@ -25,13 +25,5 @@ public class Dog extends Animal {
         } else {
             System.out.println("Собакен не может проплыть больше 10 метров");
         }
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 }

@@ -7,12 +7,12 @@ public class Main {
         Cat cat3 = new Cat("Вася");
         Dog dog1 = new Dog("Барбос");
         Dog dog2 = new Dog("Бобик");
-        dog1.running(100);
-        dog1.swimming(12);
-        dog2.swimming(10);
-        dog2.running(501);
-        cat1.running(1111);
-        cat1.swimming(10);
+        cat1.swimming(12);
+        cat1.running(201);
+        cat2.swimming(132);
+        cat2.running(150);
+        dog1.running(200);
+        dog1.swimming(10);
         System.out.println("Было создано " + Animal.count + " животных."
                 + " Из них котиков " + Cat.count + " и собак " + Dog.count + ".");
     }
