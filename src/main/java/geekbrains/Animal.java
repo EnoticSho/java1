@@ -9,9 +9,13 @@ public abstract class Animal {
         count++;
     }
 
-    public abstract void running(int length);
+    public void running(int length){
+        System.out.println(name + " пробежал " + length + " метров.");
+    }
 
-    public abstract void swimming(int length);
+    public void swimming(int length){
+        System.out.println(name + " проплыл " + length + " метров.");
+    }
 
     public void setName(String name) {
         this.name = name;
